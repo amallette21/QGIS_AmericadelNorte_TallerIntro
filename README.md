@@ -11,6 +11,7 @@ El registro es gratuito, pero es un requisito para recibir la liga de Zoom.
 * * *
 
 Este taller cubrirá los conceptos básicos de los sistemas de información geográfica, los cuales incluyen los cinco componentes principales: el hardware, el software, los datos, los procesos y metodologias, y las personas involucradas. Habrá una presentación de un resumen del hardware y los software más comunes. La sesión utilizará datos públicos como fuentes de información y explicará los procesos comunes para la recolección de datos, incluyendo recolección móvil de datos y hojas de trabajo de campo. Habrá modulos para poner los conceptos en practica y crecer sus capacidades en los siguientes temas: 
+
 -> Visualización de datos 
 -> Propiedades de la capa 
 -> Herramientas básicas 
