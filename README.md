@@ -114,7 +114,6 @@ This is where your data is visualized.
 Main tools/functions | These are the tools that you have activated for ease-of-access. By right clicking in any of the grey space you can activate or deactivate functions and tools, which add or removes them from this grey space.
 
 ![alt text](./images/QGIS.png)
-
 *Figure 4. QGIS Startup Interaface*
 
 Step | Example
@@ -238,8 +237,8 @@ You can toggle the layers on and off to see the difference in geometry (i.e. poi
 Let’s compare these vector models to raster data. As mentioned previously, raster data is stored in a series of columns and rows that create a grid of cells; each cell with a unique value that represents some spatial phenomenon. Raster images are important data sources and serve for many types of analyses in the areas of environmental science, natural resource management, and land development. They provide us with both current and historical information. Since the inherent structure of images is the same as raster models in GIS, the integration of these two technologies is quite common. Look at these two articles that show how satellite images can be used to map natural disasters: See Inside Typhoon Mangkhut in 3-D and Indonesia Earthquake and Tsunami: Before and After Photos of the Destruction. Common datasets that appear in raster format are land use/land cover, digital elevation models, and satellite imagery. We will focus on land use/land cover data, digital elevation models, and orthoimagery for these exercises.
 
 --- | ---
-![alt text](./images/OrthoimageryRasterPreview.png) | Access to high-resolution imagery is provided by the NYSDOP’s orthoimagery (the program's goal is to obtain imagery for the entire State on a [4 to 5 year cycle](http://gis.ny.gov/gateway/orthoprogram/lotyrs.html)) or orthomosaics provided by drone coverage. This digital Orthoimagery can serve a variety of purposes, from general planning to field reference for spatial analysis to a tool for revision of vector maps. It can also serve as a reference layer (i.e., basemap) for GIS. It is also important to think critically about the date of a satellite image. The interpretation of a January image can differ greatly from a July image considering that January is wintertime and most vegetation and agriculture are in a state of rest in New York State. For example, images from the summer months can show net primary production, crop yields, and vegetation growth better than images from winter months.
-![alt text](./images/DEMRasterPreview.png) | The Digital Natural Color aerial imagery was acquired in May 2018 using a Microsoft Ultracam Eagle sensor flown at a nominal height of approximately 15,550 feet Above Mean Terrain. The Ground Control used to support the 4-band ortho-imagery production was collected by identifying and surveying photo identifiable points (PID), using existing PIDs, and existing aerial targets. The Digital Aerial Triangulation (DAT) was performed. Digital Surface Models (DSM) used for ortho imagery production were generated and updated as needed using UltraMap mapping software.
+Access to high-resolution imagery is provided by the NYSDOP’s orthoimagery (the program's goal is to obtain imagery for the entire State on a [4 to 5 year cycle](http://gis.ny.gov/gateway/orthoprogram/lotyrs.html)) or orthomosaics provided by drone coverage. This digital Orthoimagery can serve a variety of purposes, from general planning to field reference for spatial analysis to a tool for revision of vector maps. It can also serve as a reference layer (i.e., basemap) for GIS. It is also important to think critically about the date of a satellite image. The interpretation of a January image can differ greatly from a July image considering that January is wintertime and most vegetation and agriculture are in a state of rest in New York State. For example, images from the summer months can show net primary production, crop yields, and vegetation growth better than images from winter months. | ![alt text](./images/OrthoimageryRasterPreview.png)
+The Digital Natural Color aerial imagery was acquired in May 2018 using a Microsoft Ultracam Eagle sensor flown at a nominal height of approximately 15,550 feet Above Mean Terrain. The Ground Control used to support the 4-band ortho-imagery production was collected by identifying and surveying photo identifiable points (PID), using existing PIDs, and existing aerial targets. The Digital Aerial Triangulation (DAT) was performed. Digital Surface Models (DSM) used for ortho imagery production were generated and updated as needed using UltraMap mapping software. | ![alt text](./images/DEMRasterPreview.png) 
 
 All digital technology for visualization (monitors, printers, plotters, digital cameras, etc.) Mix up a maximum of three individual color channels together: red, green, and blue (RGB) for monitors and cameras; or cyan, magenta, yellow, keyline/black (CMYK) for printers. Each of the bands has a maximum of 256 intensity levels to create a combined color image. In other words, the combination of bands can provide different visualizations.
 
@@ -259,3 +258,23 @@ Let us compare these vector models to raster data. As mentioned previously, rast
 
 Step | Example
 --- | ---
+Open Raster options located in Settings>Options…>Rendering>Rasters and change the algorithm for single-band gray and multi-band color to “Stretch to MinMax”. This will give you a better contrast on the raster images. | ![alt text](./images/RasterOptionsContrastEnhancement.png)
+One way to add raster data is using the browser panel. To add the land use, land cover layer for Tompkins County, find the layer in your browser panel; drag and drop it into the map canvas. The image file has its unique pixelated symbol. | BROWSER PANEL
+Another way to add raster data is to use the Add Raster Layer tool. Follow these steps to add the layer:
+1. Click on the Add Raster Layer tool in the Manage Layers Toolbar.
+1. Select the “…” icon and navigate to the folder with the digital elevation model files.
+1. Select the two digital elevation DEM files (u26elu and u27elu).
+1. Click Open.
+1. Click Add. 
+| ![alt text](./images/DataSourceManagerRaster.png)
+*This layer was previously edited to create a virtual raster layer that includes several individual orthoimage files. You will learn more about creating virtual layers later in the workshop.* A third way to add raster data is to find the layer in your computer files and drag and drop it into the map canvas. | ORTHO DRAG AND DROP
+There is a second option for downloading a basemap of orthoimagery for the entire state, called a Web Map Service (WMS), located [here](https://gis.ny.gov/gateway/mg/webserv/webserv.html). Note that this requires an internet connection.
+ 
+Follow these steps to include a WMS into your project:
+1. Copy the WMS link on the gis.ny.gov website.
+1. Open the WMS manager  
+1. Give the WMS a unique name and paste the URL. Click “OK”.
+1. Select the unique name from your list of WMS and click “Connect”.
+1. Highlight “O” to get all NYS. Click “Add”. | ![alt text](./images/CreateANewWMS.png) ![alt text](./images/WMSConnect.png)
+
+
