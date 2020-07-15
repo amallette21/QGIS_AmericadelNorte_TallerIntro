@@ -73,13 +73,13 @@ Different organizations, institutions, and individuals may identify a standard c
 
 ![alt text](./images/US_UTMzones.png "Contiguous US UTM Zones, projected with Lambert conformal conic")
 
-Source: [Chrismurf at English Wikipedia](https://commons.wikimedia.org/wiki/File:Utm-zones-USA.svg)*
+Source: [Chrismurf at English Wikipedia](https://commons.wikimedia.org/wiki/File:Utm-zones-USA.svg)
 
 Coordinates show us precisely where we are in the world. Coordinates are created based on a known origin. A geographic coordinate system typically uses latitude and longitude that breaks the world up into axes. You can imagine (0, 0) being the core of the earth, and the latitude and longitude are the angles from the Equator and the/a prime meridian; hence, geographic coordinates are in degrees (°), minutes ('), and seconds ("), DMS, where 60 seconds equals a minute and 60 minutes equals a degree. In Figure 1, 45° north and 45° west lies somewhere in the North Atlantic if the origin is 0° latitude (the Equator) and 0° longitude (Greenwich, England). DMS of meridians (longitude) are shortened as you move closer to the poles, whereas they are “widest” at the Equator. Parallels (latitude), on the other hand, are relatively closer to being equidistant from the Equator to the poles; however, we have to consider that our Earth is not a perfect sphere, rather an oblate spheroid (or ellipsoid) due to Earth’s rotation about its shorter X axis.
 
 ![alt text](./images/GeographicCoordinateSystemDiagram.png "Contiguous US UTM Zones, projected with Lambert conformal conic")
 
-Source: [Geographic Coordinate System](http://help.autodesk.com/view/ACD/2016/ENU/?guid=GUID-14B82899-9C2D-4A34-8A02-49319C6FB38C)*
+Source: [Geographic Coordinate System](http://help.autodesk.com/view/ACD/2016/ENU/?guid=GUID-14B82899-9C2D-4A34-8A02-49319C6FB38C)
 
 There is a second type of coordinate system called the projected coordinate system, which attempts to correct for this change in angles by projecting the coordinates from a specific geographic coordinate system onto a 2-dimensional plane that uses linear units. Therefore, projected coordinates are in meters- or feet-distance from the point of origin of the plane. For instance, in the Universal Transverse Mercator projected coordinate system each zone has an origin, central meridian, and false origin. False origins for northern zones lie on the Equator and 500,000 meters west of the central meridian.
 
@@ -258,12 +258,12 @@ The Digital Natural Color aerial imagery was acquired in May 2018 using a Micros
 All digital technology for visualization (monitors, printers, plotters, digital cameras, etc.) Mix up a maximum of three individual color channels together: red, green, and blue (RGB) for monitors and cameras; or cyan, magenta, yellow, keyline/black (CMYK) for printers. Each of the bands has a maximum of 256 intensity levels to create a combined color image. In other words, the combination of bands can provide different visualizations.
 
 *Q: How do satellite images work?*
-- A: Sensors receive information about an object through electromagnetic energy. This information can be coded in the frequency, intensity or polarization of the wave and is transmitted directly from the object or indirectly by reflection, dispersion or re-emission to the sensor. All materials on Earth reflect or emit electromagnetic energy. The sensors measure the intensity of the electromagnetic radiation emitted by an object and study its physical properties and variation in frequency from other objects. In this exercise, you will practice remote sensing techniques and methods to improve the contrast of images, a process called image enhancement. 
+A: Sensors receive information about an object through electromagnetic energy. This information can be coded in the frequency, intensity or polarization of the wave and is transmitted directly from the object or indirectly by reflection, dispersion or re-emission to the sensor. All materials on Earth reflect or emit electromagnetic energy. The sensors measure the intensity of the electromagnetic radiation emitted by an object and study its physical properties and variation in frequency from other objects. In this exercise, you will practice remote sensing techniques and methods to improve the contrast of images, a process called image enhancement. 
 
 ![alt text](./images/HowSatellitesWork.png "Satellite constellations, images, and uses")
 
 *Q: What is image resolution?*
-- A: The image to the left compares the same place with two images that have different resolutions. The image on the right has a higher resolution (30 centimeter) than the image on the left (1 meter). It is easier to interpret land uses when you have a high-resolution image. Many images with free access have a resolution of 30 meters, low resolution. Note that if two images—with the same extent—where compared, the image with higher resolution would contain more data.
+A: The image to the left compares the same place with two images that have different resolutions. The image on the right has a higher resolution (30 centimeter) than the image on the left (1 meter). It is easier to interpret land uses when you have a high-resolution image. Many images with free access have a resolution of 30 meters, low resolution. Note that if two images—with the same extent—where compared, the image with higher resolution would contain more data.
 
 ![alt text](./images/ResolutionExample.jpg "A comparison of raster image resolution")
 Source: [Bing Imagery](http://www.timassal.com/?tag=naip-imagery)
@@ -397,15 +397,6 @@ For this exercise, select only 3 classes for the Equal Count (Quantile) mode. Ma
 ![alt text](./images/GraduatedVectorSymbology.png "Graduated symbology applies to numerical data.")
 
 ![alt text](./images/VectorHistogram.png "Loaded layer values will show the distribution of the data values by how frequently they appear in the dataset.")
-
-Mode | Description
---- | ---
-Equal Count (Quantile) | This method will decide the classes so that the number of values in each class are the same. If there are 100 values and we want 4 classes, quantile method will decide the classes such that each class will have 25 values.
-Equal Interval | As the name suggests, this method will will create classes which are at the same size. If our data ranges from 0-100 and we want 10 classes, this method would create a class from 0-10, 10-20, 20-30 and so on , keeping each class the same size of 10 units.
-Logarithmic scale | A logarithmic scale is a nonlinear scale used for a large range of positive multiples of some quantity. It is based on orders of magnitude, rather than a standard linear scale, so the value represented by each equidistant mark on the scale is the value at the previous mark multiplied by a constant.
-Natural Breaks (Jenks) | This algorithm tries to find natural groupings of data to create classes. The resulting classes will be such that there will be maximum variance between individual classes and least variance within each class.
-Pretty Breaks | This is based on the statistical package R’s pretty algorithm. It is a bit complex, but the pretty in the name means it creates class boundaries that are round numbers.
-Standard Deviation | This method will calculate the mean of the data, and create classes based on standard deviation from the mean.
  
 **Roadways**. Open Layer Styling. For line data, you can select an automatic design style under “Favorites” or select “All Symbols” to see a wider variety of options. There is a field in the layer’s attribute table that represents the road jurisdiction as federal, state, county, local, or another jurisdiction. This information can be visualized as categorized symbols. Return to the Roadways layer’s symbology properties.
 
@@ -438,6 +429,9 @@ Sometimes there are values or non-values that you want to delete, which can be d
 As with points and lines, polygon data can also be changed to “Categorized” or “Graduated” to create colorful ranges for attribute variables, such as choropleth maps. To learn more about appropriate color schemes, go to [COLORBREWER 2.0](http://colorbrewer2.org/#type=sequential&scheme=BuGn&n=3) for color advice.
 
 *Changing symbology of raster data*
+
+![alt text](./images/RasterLayersOverlaidTogether.png "Visualizing raster datasets")
+
 In a raster image file, each pixel has numbers associated with it, specifying a color for the pixel. The simplest representation of an image has each pixel specified by three 8-bit (24 bits total) color values, which range from zero to 255 and define the amount of red, green, and blue in each pixel. When combined, red, green, and blue can form black, white, 254 shades of grey, and 16,777,216 colors.
 
 There are five standard options to change the style (i.e., “Render Type”) of a raster layer:
@@ -626,51 +620,60 @@ Let’s take for instance Vincent van Gogh’s bowl of fruit, which has two pear
 
 ![alt text](./images/vanGoghFruits1.png "Digital version of van Gogh's bowl of fruit.")
 
-TABLE
+ID | TYPE | COLOR | SIZE | TASTE
+--- | --- | --- | ---| ---
+1 | Apple | Red | SMALL | Sweet
+2 | Apple | Red | MED | Sweet
+3 | Orange | Orange | Small | Citrus
+4 | Pear | Green | LARGE | Sweet
+5 | Pear | Green | LARGE | Sweet
 
-**Simple**
-If our question was, “How many fruits are red?”, then, the SQL expression would be: 
+**Simple**. If our question was, “How many fruits are red?”, then, the SQL expression would be: 
 “COLOR” = ‘Red’
 The selection would highlight ID 1 and 2. This is a selection based on one attribute value.
 
-**AND**
-If our question was, “How many fruits are red and small?”, then, the SQL expression would be:
-	“COLOR” = ‘Red’ AND “SIZE” = ‘SMALL”
+**AND**. If our question was, “How many fruits are red and small?”, then, the SQL expression would be:
+“COLOR” = ‘Red’ AND “SIZE” = ‘SMALL”
 The selection would highlight ID 1. With Boolean AND, all the selected features must comply with ALL the requested attributes.
 
-**OR**
-If our question was, “How many fruits are red or small?”, then, the SQL expression would be:
-	“COLOR” = ‘Red’ OR “SIZE” = ‘SMALL”
+**OR**. If our question was, “How many fruits are red or small?”, then, the SQL expression would be:
+“COLOR” = ‘Red’ OR “SIZE” = ‘SMALL”
 The selection would highlight ID 1, 2, and 3. Contrary to Boolean AND, Boolean OR will select features that have ANY of the requested attributes.
 
-**NOT**
-If our question was, “How many fruits are not red?”, then, the SQL expression would be:
-	NOT (“COLOR” = ‘Red’)
+**NOT**. If our question was, “How many fruits are not red?”, then, the SQL expression would be:
+NOT (“COLOR” = ‘Red’)
 The selection would highlight ID 3, 4, and 5. The selection must not have the attribute value.
 
-**LIKE**
-If our question was, “How many fruits are citrus?”, then, the SQL expression would be:
+**LIKE**. If our question was, “How many fruits are citrus?”, then, the SQL expression would be:
 	“TASTE” LIKE ‘%Ci%”
 The selection would highlight ID 3, since its attribute contains part of “Ci” (case sensitive).
 
-**ILIKE**
-If our question was, “How many fruits are citrus?”, then, the SQL expression could also be:
-	“TASTE” ILIKE ‘%ci%”
+**ILIKE**. If our question was, “How many fruits are citrus?”, then, the SQL expression could also be:
+“TASTE” ILIKE ‘%ci%”
 The selection would highlight ID 3 again; since it contains the letters “ci” and it ILIKE is not case sensitive like LIKE.
 
 ### Exercise 8. Non-spatial data query.
-Review the attributes of your dataset. We will select all the active agriculture fields. Find the Select by expression tool either in the main toolbar or in the attribute table.
- 
-You can select attributes for your selection and specifically the values of that attribute. You can see all the values per attribute (field), by clicking Load values “All Unique” button. Create the expression:
-“General” = ‘Agriculture’ and click Select Features.
-Your expression is incomplete if you have an output preview that says, “Expression is invalid”. It should appear with a black number confirming validity.
-The number of features selected can be found at the top of the attribute table and will be mentioned in the bottom ribbon of the main interface screen.
-Open the attribute table. In the bottom right, you will see that “Show All Features” is the default. Change this to “Show Selected Features”. The table will show only the features that fit your expression.
-In the map space, these features will appear selected in yellow compared to the main style color for the layer.
-We will calculate the statistics again for the layer, but only for the selected features (agriculture).
+Review the attributes of your dataset. We will select all the active agriculture fields. Find the Select by expression tool either in the main toolbar or in the attribute table. 
 
-Repeat these steps for the 10 other land use, land cover categories.
+![alt text](./images/SelectbyExpression.png "Select by expression interface")
+
+You can select attributes for your selection and specifically the values of that attribute. You can see all the values per attribute (field), by clicking Load values “All Unique” button. Create the expression: “General” = ‘Agriculture’ and click Select Features.
+
+![alt text](./images/SelectbyExpressionEx1.png "Select by expression example 1")
+
+Your expression is incomplete if you have an output preview that says, “Expression is invalid”. It should appear with a black number confirming validity. The number of features selected can be found at the top of the attribute table and will be mentioned in the bottom ribbon of the main interface screen.
+
+Open the attribute table. In the bottom right, you will see that “Show All Features” is the default. Change this to “Show Selected Features”. The table will show only the features that fit your expression.
+
+![alt text](./images/ShowSelectedFeaturesMenu.png "Attribute filtered view based on selection")
+
+In the map space, these features will appear selected in yellow compared to the main style color for the layer. We will calculate the statistics again for the layer using the show statistics summary tool, but only for the selected features (agriculture). Repeat these steps for the 10 other land use, land cover categories.
+
+![alt text](./images/StatsTool.png "Show statistics summary tool pinned to map canvas")
+
 If you wanted to select several classes at once, for instance active and inactive agriculture, you could use the AND operator. The Boolean operators like AND explained previously are in Operators in the center section, but can be typed in the expression, as well.
+
+![alt text](./images/SelectbyExpressionEx2.png "Select by expression example 2")
 
 ## Spatial Data Queries
 In a spatial data query, the objects of a layer are selected according to their proximity or relative location to the objects of another layer. They are based on 1) all the features within a layer or 2) the features selected from a previous selection. Consider again our van Gogh example. Imagine that the fruit are one layer and the bowl is a second layer. 
@@ -682,13 +685,17 @@ We want to select all the fruit that are in the bowl. So, the layer that we want
 - The first pear in the bowl
 - The second pear in the bowl
 
+![alt text](./images/vanGoghFruits2.png "Selected fruit within the bowl")
+
 Case #2
 Remember our simple selection, “COLOR” = ‘Red’, which selected the two apples? We can create a new selection based on that selection. Imagine that the two apples are selected as our source geometries within the source features. If we added the spatial query for those selected features within the bowl layer, then our new selection would be:
 - The apple in the bowl
 
+![alt text](./images/vanGoghFruits3.png "Selected fruit within the bowl AND COLOR=Red")
+
 The different relative relationships that exist for different geometries are as follows:
 
-TABLE
+![alt text](./images/SelectbyLocationOptions.png "Spatial relationships for select by location tool")
 
 The main spatial relations between features for selection mentioned in the above table are: 
 - **Crosses** (only possible with line or polygon geometries, is when the source features cross the reference object), 
@@ -701,17 +708,27 @@ The main spatial relations between features for selection mentioned in the above
 - **Touches** (point, line, and polygon source features can only be touched by reference lines or polygons; source features touch borders, but do not cross and are not within the reference feature). 
 
 ### Exercise 9. Spatial Data Query.
-In this example, we will be selecting the land use, land cover classes that intersect the City of Ithaca to create a new dataset.
+In this example, we will be selecting the land use, land cover classes that intersect the City of Ithaca to create a new dataset. Before we run the spatial data query, use the identify tool to try and find the City of Ithaca in the NYS_Cities_Towns layer. You can use a non-spatial data query or the Select features tool to select the City of Ithaca.
 
-Before we run the spatial data query, use the identify tool to try and find the City of Ithaca in the NYS_Cities_Towns layer. You can use a non-spatial data query or the Select features tool to select the City of Ithaca.
-The tool to run their spatial relationships is within VectorResearch ToolsSelect by Location… 
+![alt text](./images/SelectIthaca.png "Select Ithaca using the select features tool.")
+
+The tool to run their spatial relationships is within Vector>Research Tools>Select by Location… 
+
+![alt text](./images/SelectbyLocation.png "Select by location in the vector drop-down menu is located under Research Tools.")
+
 Our input feature to select is the layer from which you wish to have features selected. The “Where the features…” section allows you to decide what spatial relation is necessary for this selection. The comparison feature is the layer that you want to know exactly what its relative location is to the input feature. If you have certain features that are relevant, thus selected, you can check “Selected features only” underneath the “By comparing to the features from LAYER” section.
+
+![alt text](./images/SelectbyLocationTool.png "Select by location tool creates a selected in the input layer based on its spatial relationship with another layer.")
+
 There are several options for the type of selection you can do. You can create a new selection, add to the features that are already selected in the input layer, select from the selected features in the input layer, or remove from the selected features in the input layer.
-You will see that the new selection appears in yellow in the map space. They will also appear highlighted in the attribute table. 
+You will see that the new selection appears in yellow in the map space. They will also appear highlighted in the attribute table.
+
 You can create a new layer from the selected features. Right click on the layer in the layers panel>Export>Save Selected Features As… and save it as a new file in your geospatial database.
 
+![alt text](./images/SaveSelectedFeaturesAs.png "You can save only the selected features in a layer by saving the vector layer as a shapefile and clicking save only selected features.")
+
  # Geoprocessing Tools and Processing Toolbox
- ## What spatial projects are you interested in designing?
+*What spatial projects are you interested in designing?*
 Approaches to spatial analyses will depend on a variety of factors, including your objectives, the final product you are seeking to create, and the themes you intend to cover. Once you have begun thinking about the analysis that you want to do, you can begin the project. There is no one-size-fits-all procedure for designing a project. These 10 steps below can be a good place to start organizing your thoughts. In this workshop, we have—informally—covered steps one through six. The remainder of the workshop will touch upon step seven and step 9. It is recommended that you spend more time learning about step 8 and step 10.
 
 1. Identify the situation/issue and objectives.
@@ -727,7 +744,7 @@ Approaches to spatial analyses will depend on a variety of factors, including yo
 
 To explore and define some patterns based on spatial relations between datasets, the following workflow is generally used:
  
-DIAGRAM
+![alt text](./images/ProcessingWorkflow.png "The workflow for identifying spatial relations using processing tools.")
  
 The input is the dataset that you wish to modify. The tool establishes the overlay function or algorithm that will be used to create a new data layer. The output is the new data layer that is created from the input layer. Some tools have multiple inputs. You may need to use several tools to get the output that you desire. 
 
@@ -737,39 +754,55 @@ The exercises in this section will highlight clipping tools and the creation of 
 *Clip*
 A clip can be just as useful as a selection based on location. In this example, we will clip the land use, land cover classes to the City of Ithaca’s boundaries to create a new dataset. Like before, you can use a non-spatial data query or the Select features tool to select the City of Ithaca. 
 
-The input layer: The land use, land cover dataset for Tompkins County.
+![alt text](./images/VectorClip.png "Vector geoprocessing tools in the main vector menu")
 
-Overlay layer: the selected City of Ithaca in the NYS Cities and Towns dataset.
+- The input layer: The land use, land cover dataset for Tompkins County.
+- Overlay layer: the selected City of Ithaca in the NYS Cities and Towns dataset.
+- You can save the output in either a temporary or permanent location.
+- Click Run.
 
-You can save the output in either a temporary or permanent location.
+![alt text](./images/VectorClip2.png "Tool for clipping vector data")
 
-Click Run.
 The output will be the land use, land cover layer only for the city.
-Raster Clip by Mask
+
+![alt text](./images/VectorClipOutput.png "Output from vector clipping tool")
+
+*Raster Clip by Mask*
 You may want to clip a raster dataset to your research area or area of interest. To do so, follow these steps:
-1. Go to RasterExtractionClip Raster by Mask Layer…
 
-2. Fill in the parameters. Select the land use, land cover raster image as the Input layer and the City of Ithaca (as a selected feature from NYS Cities and Towns layer) as the Mask layer.
+![alt text](./images/ClipRasterbyMaskLayer.png "Raster extraction tools in the main raster menu")
 
-Check “Match the extent of the clipped raster to the extent of the mask layer.” Save the output file (Clipped mask) to a permanent or temporary file. Run the tool.
+1. Go to Raster>Extraction>Clip Raster by Mask Layer…
+1. Fill in the parameters. Select the land use, land cover raster image as the Input layer and the City of Ithaca (as a selected feature from NYS Cities and Towns layer) as the Mask layer. Check “Match the extent of the clipped raster to the extent of the mask layer.” Save the output file (Clipped mask) to a permanent or temporary file. 
+1. Run the tool. Now there is a smaller, clipped raster image of land use, land cover.
 
-Now there is a smaller, clipped raster image of land use, land cover.
+![alt text](./images/ClipRasterbyMaskLayerTool.png "Tool for clipping raster data")
+
+![alt text](./images/ClipRasterbyMaskLayerOutput.png "Output from raster clipping by mask tool")
  
 *Creating a Virtual Raster Layer*
 We are going to merge the digital elevation models (DEM) into one virtual raster layer. Locate the DEMs in the raster group. You will notice that each image represents a portion of the City of Ithaca with various gray-scale shading.
- 
-In the Raster menu select Miscellaneous Build Virtual Raster… to open the virtual raster tool.
-1.	Select all the DEM tiles for the “Input layers”.
-2.	Uncheck “Place each input file into a separate band”.
-3.	Either save the virtual file or keep it as a temporary file.
-4.	Run the tool.
+
+![alt text](./images/BuildVirtualRaster.png "Build virtual raster in miscellaneous of the main raster drop-down menu")
+
+1. In the Raster menu select Miscellaneous>Build Virtual Raster… to open the virtual raster tool.
+1. Select all the DEM tiles for the “Input layers”.
+1. Uncheck “Place each input file into a separate band”.
+1. Either save the virtual file or keep it as a temporary file.
+1. Run the tool.
+
+![alt text](./images/BuildVirtualRasterTool.png "Build virtual raster tool")
+
 Now, the layers have been merged into one image, which can be edited as a single layer.
+
+![alt text](./images/VirtualRasterBeforeAfter.png "Before and after using the build virtual raster tool")
 
 *Processing Toolbox*  
 The processing toolbox has a wealth of other tools that you might find useful. If you are familiar with Esri’s toolboxes, then you may see several similarities between the two. Spend time reviewing these lists to see if there are any tools that may be useful to your workload and workflow.
 
+![alt text](./images/ProcessingToolbox2.1.png "Before and after using the build virtual raster tool")
+
 # Plugins
-## Introduction
 According to the [QGIS plugins web portal](https://plugins.qgis.org/), “QGIS plugins add additional functionality to the QGIS application. There is a collection of plugins ready to be used, [available to download](https://plugins.qgis.org/plugins/). These plugins can also be installed directly from the QGIS Plugin Manager within the QGIS application.”
  
 Notes for plugin users
@@ -789,17 +822,18 @@ OpenStreetMap is the open-source, community-driven version of Google Maps. It is
 Remember that if you use an OpenStreetMap basemap, then you should give credit to the contributors of the OpenStreetMap project. To do so, include “© OpenStreetMap contributors” on your final map products. For more information, go to [OpenStreetMap](https://www.openstreetmap.org/about). 
 
 ### Exercise 11: QuickMapServices plugin
-The plugin we will be downloading is for a collection of basemaps, called QuickMapServices plugin. The basemaps alternatives are:
- 
+The plugin we will be downloading is for a collection of basemaps, called QuickMapServices plugin. You can see all your plugins under the Plugins menu>Manage and Install Plugins... The basemaps alternatives are: Landsat, MapSurfer.NET, NASA, OpenStreetMap, and eAtlas Mos. You can search QuickMapServices and set proper scale and settings.
 
-You may need to save your project and restart QGIS for some plugins to activate. For QuickMapServices, find OSM (i.e., OpenStreetMap) and add the standard basemap to the project.
-Now, you should be able to see roads and other features commonly found in basemaps.
+![alt text](./images/PluginsMenu.png "Access and manage your plugins from inside the QGIS interface through the Plugins menu.") 
+
+![alt text](./images/PluginsQuickMapServices.png "You can search plugins, as well.") 
+
+You may need to save your project and restart QGIS for some plugins to activate. For QuickMapServices, find OSM (i.e., OpenStreetMap) and add the standard basemap to the project. Now, you should be able to see roads and other features commonly found in basemaps.
 
 # Cartographic Design and Print Layout
-## Introduction
 What is a map? It is a three-dimensional representation on a plane (two-dimensional) surface that projects spatial information such as cities, elevation, streets, etc. At the end of the day, the design and creation of a map depends very much on the map product discussed in the geospatial process design process explained previously. Important questions to answer are, “Who are the target end users?”, “What is the topic?”, and “What is the scale?” Of course, the symbology and the spatial features that you would use change from one project to another.
 
-There are several cartographic elements that need to be included in any map. Each map has three (3) main elements of cartography: scale, projection, and symbology. The scale shows that the size of the study area. Without this information it can be difficult to read and understand the map’s extent. Projection is another essential element as it affects relative shapes and sizes of the features. Remember that there is distortion when you put the world (a 3D ellipsoid) on a 2D surface. The features and their angles change. Therefore, it is always good to use a projection that minimizes this distortion and mention it on your final map and in your metadata. The symbology must include, at least, these elements:
+There are several cartographic elements that need to be included in any map. Each map has three (3) main elements of cartography: **scale**, **projection**, and **symbology**. The scale shows that the size of the study area. Without this information it can be difficult to read and understand the map’s extent. Projection is another essential element as it affects relative shapes and sizes of the features. Remember that there is distortion when you put the world (a 3D ellipsoid) on a 2D surface. The features and their angles change. Therefore, it is always good to use a projection that minimizes this distortion and mention it on your final map and in your metadata. The symbology must include, at least, these elements:
 - the title,
 - the geospatial data (vector or raster),
 - the datum and projection name,
@@ -827,36 +861,27 @@ For the final map user to locate the area, the map should include geographical r
 - whatever you can imagine.
 
 If you are going to label the elements on the map, the most important thing is to make them legible. In the following examples, the first is the only, truly legible option:
-HOW TO DO THIS
-	Purpose of labels: Legibility (Bookman Old Style, 12 font)
-	Purpose of labels: Legibility (Jokerman, 12 font) 
-	Purpose of labels: Legibility (Bradley Hand ITC, 12 font) 
-	Purpose of labels: Legibility (French Script, 12 font) 
-	Purpose of labels: Legibility (Freeestyle Script, 12 font) 
-	Purpose of labels: Legibility (Curlz MT, 12 font)
 
-The font, color, size, style (italic or bold), and position are all important. One common cartographic rule is “always include two font types per map,” one without/sans serifs (e.g. Verdana, Arial, Tahoma) and another with serifs (e.g. Times New Roman, Palatino Linotype, Cambria).
-HOW TO DO THIS
-Sans serif is for cultural elements: 
-	Cities, towns, airports, etc. 
-	Oblasts, parks
-	Highways, freeways, streets, etc. 
-Serif is for natural resources: 
-	Mountains, valleys, canyons, etc. 
-	Mountain ranges, forests, etc. 
-Serif in italics is for water: 
-	Ocean, golfs, seas, lakes, etc.
-	Rivers, streams, etc.
+![alt text](./images/FontLegibility.png "Which font do you think is the most legible?") 
+
+The font, color, size, style (*italic* or **bold**), and position are all important. One common cartographic rule is “always include two font types per map,” one without/sans serifs (e.g. Verdana, Arial, Tahoma) and another with serifs (e.g. Times New Roman, Palatino Linotype, Cambria).
+
+![alt text](./images/Serifs.png "Serif standards for different features") 
+
 In this module we make a choropleth map, which is a thematic map that is symbolized so that the colors of each area represent classified values. For instance, you can show areas of something within (we will be doing this), rates of change, population per area, and other comparable factors. The different types of breaks are: 
-- Natural Breaks (Jenks, the variance within each class is minimal while the variance between classes is maximal);
-- Equal Interval (each class has the same size, e.g. values from 0 to 16 and 4 classes, each class has a size of 4);
-- Quantile (Equal Count, each class will have the same number of elements inside)
-- Standard Deviation (based on statistics, classes are built depending on the standard deviation of the values); and
-- Pretty Breaks (based on the R statistical environment, it computes a sequence of about n+1 equally spaced nice values which cover the range of the values in x – the values are chosen so that they are 1, 2 or 5 times a power of 10). 
+
+Break Mode | Description
+--- | ---
+Equal Count (Quantile) | This method will decide the classes so that the number of values in each class are the same. If there are 100 values and we want 4 classes, quantile method will decide the classes such that each class will have 25 values.
+Equal Interval | As the name suggests, this method will will create classes which are at the same size. If our data ranges from 0-100 and we want 10 classes, this method would create a class from 0-10, 10-20, 20-30 and so on , keeping each class the same size of 10 units.
+Logarithmic scale | A logarithmic scale is a nonlinear scale used for a large range of positive multiples of some quantity. It is based on orders of magnitude, rather than a standard linear scale, so the value represented by each equidistant mark on the scale is the value at the previous mark multiplied by a constant.
+Natural Breaks (Jenks) | This algorithm tries to find natural groupings of data to create classes. The resulting classes will be such that there will be maximum variance between individual classes and least variance within each class.
+Pretty Breaks | This is based on the statistical package R’s pretty algorithm. It is a bit complex, but the pretty in the name means it creates class boundaries that are round numbers.
+Standard Deviation | This method will calculate the mean of the data, and create classes based on standard deviation from the mean.
 
 When there are multiple or random variables, it is common to normalize the data by transforming values into a specific, single comparable range. When the total values of a variable (e.g. populations or quantities) are mapped, it is necessary to normalize the data by area or by total population. This creates a proportion or ratio (attribute to map ÷ attribute to standardize against).
 
-1. Percentages (i.e. percent of total) can be compared as opposed to raw quantities for areas or populations that vary dramatically :
+1. Percentages (i.e. percent of total) can be compared as opposed to raw quantities for areas or populations that vary dramatically:
 (Attribute value for feature x)/(Sum of attribute values in all features)=Proportion (%)of total contained in feature x
 1. Another percentage can represent one attribute normalized by another (what we will be mapping in this module):
 (Attribute value for feature x)/(Universe value for feature x)=Proportion (%)of universethat is the attribute
@@ -867,77 +892,122 @@ When there are multiple or random variables, it is common to normalize the data 
  
 If you were to print your map, you must consider the size in which it will be printed. You have to choose a specific paper size before adding elements to your map; otherwise you might print out a pixelated map that is hard to read. Also, depending on institutional standards and/or the data shape, you might have to change the page orientation from portrait to landscape, or vice versa. You can also set margins to avoid parts of the map being cut off when printed.  
 
-TABLE
+Type | Size (cm) | Size (in)
+--- | --- | ---
+A3 | 29.3 x 42 | 11.7 x 16.5
+A4 | 21 x 29.7 | 8.3 x 11.7
+A5 | 14.8 x 21 | 5.8 x 8.3
+B4 | 25 x 35.3 | 9.9 x 13.9
+B5 | 17.6 x 25 | 6.9 x 9.8
+Executive | 17.8 x 25.4 | 7 x 10
+Legal (USA) | 21.6 x 35.6 | 8.5 x 14
+Letter (USA) | 21.6 x 27.9 | 8.5 x 11
+Statement | 19.7 x 27.3 | 7.7 x 10.7
+Tabloid | 27.9 x 43.2 | 11 x 17
 
 ### Exercise 12: Create a choropleth map and add labels
 We are going to create a graduated, choropleth map of the percent of population change by county between 1990 and 2010.
 1. Select “Graduated”
-2. Select the expression icon to calculate population change:
- 
-3. Change the legend format so the legend will be a percent with a precision of 0 to eliminate decimal places.
-4. Choose the red to blue color ramp.
-5. Click “Natural Breaks (Jenks)” mode and “Classify” into 5 ranges.
-6. Apply changes to the layer.
-You can add labels to your map. In Layer Styling for NYS_Counties, change “No labels” to “Single labels” for the attribute with NAME values for each county. You can change the font, font size, color, etc. You can even add a buffer around the text.
- 
-You can edit the label placement for every label using Placement tab:
- 
+1. Select the expression icon to calculate population change:
+1. Change the legend format so the legend will be a percent with a precision of 0 to eliminate decimal places.
+1. Choose the red to blue color ramp.
+1. Click “Natural Breaks (Jenks)” mode and “Classify” into 5 ranges.
+1. Apply changes to the layer.
+
+![alt text](./images/CountiesGraduatedPopChangeStylingSQR.png "Normalizing the data using an expression") 
+
+![alt text](./images/CountiesGraduatedPopChangeStyling.png "Creating a chrolopleth map starts with graduating the symbols, which can be done using label styling and an expression.") 
+
+You can add labels to your map. In Layer Styling for NYS_Counties, change “No labels” to “Single labels” for the attribute with NAME values for each county. You can change the font, font size, color, etc. You can even add a buffer around the text. You can edit the label placement for every label using Placement tab or label toolbar.
+
+![alt text](./images/CountiesGraduatedPopChangeStylingLabels.png "Adding labels to a layer")
 
 Zoom out to New York State to see your data symbolized as a choropleth map.
 
+![alt text](./images/CountiesGraduatedPopChangeOutput.png "Choropleth map example") 
+
 ## Print Composer in QGIS
 
-IMAGE
+![alt text](./images/PrintComposer.png "Print composer interface") 
 
 The print composer is the space where you begin creating your final map product. It is a separate interface within the QGIS desktop application/software.
 
 ### Exercise 13. Print composer in QGIS.
-To open the print composer, following route Menu Bar  Project  New Print Layout or with (Ctrl + P). A small interface will ask what name you would like to establish for the print layout. This does not automatically become the title of your map, so you can title the print composer something that lets you know what it represents.
+To open the print composer, following route Menu Bar > Project > New Print Layout or with (Ctrl + P). A small interface will ask what name you would like to establish for the print layout. This does not automatically become the title of your map, so you can title the print composer something that lets you know what it represents.
+
+![alt text](./images/ProjectMenuNewPrintLayout.png "New print layout option in the main project menu")
+
+![alt text](./images/CreatePrintLayoutTitle.png "Give a title to the new print layout, which does not automatically create a title in the map itself.")
 	   
-Page setup
-In the pop-up screen you will have to right-click and find the Page Properties… The sizes were explained in the cartographic design introduction. You can change the orientation and margins, as well. Be aware of the units used to measure margins.	  
-Elements of the map
-The first step for adding elements to the composer is to  Add new map. Click the tool icon and draw the rectangle for your map space. It will appear when you finish drawing the rectangle.
-You may need to move around elements and content. To do so use the following tools:
- Pan composer to move around the composer (not the data)
- Select move item (elements of the map); this is the tool to use for changing the extent or position of an element
- Move item content; panning within the new map (hint: if you hit “ctrl” and scoll it zoom in/out).
+**Page setup**. In the pop-up screen you will have to right-click and find the Page Properties… The sizes were explained in the cartographic design introduction. You can change the orientation and margins, as well. Be aware of the units used to measure margins.	  
+
+![alt text](./images/PrintLayoutPageSetup.png "You can change the orientation and size of your page by right-clicking in the blank page.") 
+
+**Elements of the map**. The first step for adding elements to the composer is to  Add new map. Click the tool icon and draw the rectangle for your map space. It will appear when you finish drawing the rectangle.
+
+![alt text](./images/PrintLayoutAddNewMap.png "Add new map to the page.")
+
+You will need to add and move around map elements and content. To do so use the following tools:
+
+Icon | Description
+--- | ---
+ | Pan composer to move around the composer (not the data)
+ | Select move item (elements of the map); this is the tool to use for changing the extent or position of an element
+ | Move item content; panning within the new map (hint: if you hit “ctrl” and scoll it zoom in/out).
+| Zoom into/out of map; this does not zoom into or out of data)
+| Refresh view allows any changes made in the QGIS main interface to appear on the Print layout
+| Add shape tool
+| Add image
+| Add a new north arrow
+| Add new label
+| Add scalebar
+| Add new legend
+| Add
+| Delete
+| Rename the layer
+| Export map as PDF, SVG, or image
+
+
 The scale sometimes needs to be edited; in which case you would need to change the scale ratio. To make the scale smaller would require give it a larger denominator value. 1:30000000 would cover all North America. A larger scale would need a smaller denominator, like 1:30000 would “zoom in” to the City of Ithaca. Use “ctrl” and scroll bar on a mouse to zoom in or our slowly.
-You can add a frame to the new map so that it has a border between map space and the white space in the margins.
-You can add grids to maps to show coordinate values, or simply to add aesthetics. You would have to add a new grid with the green plus button, which will create Grid 1. Then edit the different characteristics of the grid (i.e., modify grid). Note that it will match the datum and projected coordinate system that we identified at the beginning of the module (WGS 84/UTM Zone 18N). You can change the intervals to space out grid lines, as well as change the style of the lines. For instance, it is good to have fewer grid lines or lighter grid lines so that they do not compete too strongly against the data and symbology in the graphical hierarchy.
-You can change the frame and include coordinates on the final grid. 
- 
-The coordinates are under “Draw coordinates,” which would need to be activated to edit the options.
-Rectangles, ellipses, and triangles can be added to the map. Rectangles often function well as background and frames for areas that include several different map elements. Draw one rectangle with a white background and a grey/black outline using the   Add shape tool. We will fill in this space with the scale, text, north arrow, and logos.
-If at any point you accidentally add an element and want to delete it, you simply need to select that element in the items list, go to EditDelete.
-  Add image
-There are many images that can be added to your final map. If you have an inset map to add, you would do so with the add image tool to browse for the image in your file folders. If you have a logo to add, again you can use the add image tool. 
- 
- 
-The “Adds a new north arrow…” add a north arrow to the project. If you click on “Search directories” the software will search the program files for its svg files that were downloaded with the software application. There are also icons in here for cultural features, such as camping, bathrooms, and signage.
 
+![alt text](./images/PrintLayoutScale2.png "Adjust zoom on map data.")
 
-  Add new label (text)
-The add new text tool is essential for adding the following map elements, such as projection and datum information:
-1.	Credits:
- 
-2.	Notes:
- 
-3.	Title and subtitles: 
-  Scale
-As you already know, scale is one of the mandatory map elements. It explains the scale that you modified when you added the map to the composer. It will appear on the final map so that users can understand how large of an area is being represented. In the Main Properties for the scale bar you want to make sure that the scale is for the active, main map – in this case, Map 1. You can change the tick marks and scale style, units, and segments to make it more aesthetically pleasing. To be consistent in your use of font, open “Fonts and colors” to edit the font type and color.
- 
- Add new legend tool allows you to draw a legend space. You can activate Auto update to add all the map elements or just add them   or
-delete them   individually.
-You can also change the name   of a layer.
-Adding a frame and background builds contrast with other map elements. Remember to be consistent with fonts in your final map.
-  
- 
-Once you have completed your final map, you can save the composer. If you are ready to publish the final map, you can do so as a PDF, SVG, and image.
-   
-For the image export, it will ask you what resolution you want in dots per inch (dpi). The higher the dpi the better the resolution and the larger the file. Once you click Save the file will be saved into the folder file you identified previously.
+Add frame and grids. You can add a frame to the new map so that it has a border between map space and the white space in the margins. You can add grids to maps to show coordinate values, or simply to add aesthetics. You would have to add a new grid with the green plus button, which will create Grid 1. Then edit the different characteristics of the grid (i.e., modify grid). Note that it will match the datum and projected coordinate system that we identified at the beginning of the module (WGS 84/UTM Zone 18N). You can change the intervals to space out grid lines, as well as change the style of the lines. For instance, it is good to have fewer grid lines or lighter grid lines so that they do not compete too strongly against the data and symbology in the graphical hierarchy. 
 
-FINAL MAP
+![alt text](./images/PrintLayoutGrid.png "Add new grid to the map.")
+
+Add coordinates. You can change the frame and include coordinates on the final grid. The coordinates are under “Draw coordinates,” which would need to be activated to edit the options.
+
+![alt text](./images/PrintLayoutDrawCoordinates.png "Draw coordinates")
+
+Add Rectangles, ellipses, and triangles. Rectangles often function well as background and frames for areas that include several different map elements. Draw one rectangle with a white background and a grey/black outline using the   Add shape tool. We will fill in this space with the scale, text, north arrow, and logos. If at any point you accidentally add an element and want to delete it, you simply need to select that element in the items list, go to Edit>Delete.
+
+Add image. There are many images that can be added to your final map. If you have an inset map to add, you would do so with the add image tool to browse for the image in your file folders. If you have a logo to add, again you can use the add image tool. 
+ 
+![alt text](./images/PrintLayoutPicture.png "Add new image to the map.")
+ 
+Add north arrow. The “Adds a new north arrow…” add a north arrow to the project. If you click on “Search directories” the software will search the program files for its svg files that were downloaded with the software application. There are also icons in here for cultural features, such as camping, bathrooms, and signage.
+
+![alt text](./images/PrintLayoutNorthArrow.png "Add north arrow or images, including SVG in the QGIS directory.")
+
+Add new label (text). The add new text tool is essential for adding the following map elements, such as projection and datum information:
+1. Credits (i.e., author, date of map, sources, basemap copyright, and coordinate reference system),
+1. Notes (i.e., details about the dataset or quality of the data), and
+1. Title, subtitles, and year of data.
+
+![alt text](./images/PrintLayoutText.png "Edit the text or additional labels in the map.")
+
+Add a scalebar. As you already know, scale is one of the mandatory map elements. It explains the scale that you modified when you added the map to the composer. It will appear on the final map so that users can understand how large of an area is being represented. In the Main Properties for the scale bar you want to make sure that the scale is for the active, main map – in this case, Map 1. You can change the tick marks and scale style, units, and segments to make it more aesthetically pleasing. To be consistent in your use of font, open “Fonts and colors” to edit the font type and color.
+
+![alt text](./images/PrintLayoutScale.png "Edit the scalebar.")
+ 
+Add new legend tool allows you to draw a legend space. You can activate Auto update to add all the map elements or just add them or delete them individually. You can also change the name of a layer. Adding a frame and background builds contrast with other map elements. Remember to be consistent with fonts in your final map.
+
+![alt text](./images/PrintLayourSymbology.png "Edit the legend items.")
+ 
+Once you have completed your final map, you can save the composer. If you are ready to publish the final map, you can do so as a PDF, SVG, and image. For the image export, it will ask you what resolution you want in dots per inch (dpi). The higher the dpi the better the resolution and the larger the file. Once you click Save the file will be saved into the folder file you identified previously.
+
+![alt text](./images/CountiesGraduatedPopChangeFinalMap.png "Example of a final map")
 
 Congratulations on successfully completing the workshop!
 
