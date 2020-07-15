@@ -6,7 +6,7 @@ La Conferencia Virtual de QGIS en America del Norte es un evento en línea que e
 24 de julio: Visualización 2D de geología con QGIS 
 31 de julio: Recolección de datos con "Input" y QGIS  
 
-El registro es gratuito, pero es un requisito para recibir la liga de Zoom.  
+El registro es gratuito, pero es un requisito para recibir la liga de Zoom.
 
 * * *
 ## Workshop Details
@@ -26,6 +26,10 @@ Este taller cubrirá los conceptos básicos de los sistemas de información geog
 - Diseño geográfico y vista de impresión
 
 La sesión terminará con un diálogo sobre la movilización de sus redes individuales e institucionales para crecer un programa eficiente y productivo de sistemas de información geográfica, utilizando ejemplos de Mexico, Ucrania, y Nueva York.
+
+Se puede traducir esta página con Google Translate.
+
+![alt text](./images/GoogleTranslate.png "Activate Google Translate for this page to read the instructions in your language.")
 
 ## Objectives
 - Review the QGIS software and methods for adding spatial data.
@@ -65,6 +69,9 @@ Layer | Location | Year | Source
 1. No interrumpa durante la presentación o las demostraciones de QGIS. Si tiene una pregunta, use el icono de levantar la mano en el chat o haga su pregunta directamente en el chat. Alguien estará monitoreando el chat para responder preguntas a medida que surjan. Las preguntas y comentarios también se pueden compartir en el cuarto de asesoría simultánea.
 1. La instructora preguntará si los participantes están listos para pasar al siguiente tema o actividad. Los participantes harán clic en el icono "sí" o "no" en el chat de Zoom para informar al instructor si están listos o no. Si la mayoría de los participantes están listos, entonces el taller continuará. Si la mayoría de los participantes no están listos, la instructora revisará el chat para ver qué debería revisar antes de seguir adelante.
 1. Solo las instructores pueden compartir su pantalla en la reunión principal. Es posible que usted pueda compartir su pantalla en el cuarto de asesoría simultánea cuando sea apropiado.
+
+## Workshop Presentation
+Se puede aceder la presentación del taller en [Prezi](https://prezi.com/view/Dt48eDokjLAoATQYLIxc/).
 
 ## Introduction: Coordinate reference systems
 Prior to opening any geographic information system (GIS), one should be familiar with coordinate reference systems as you will encounter several different systems in your career as a GIS user. Fundamentally, coordinate reference systems, or spatial reference systems, use coordinates to locate geographical entities, which are mapped using a unique map projection. Map projections differ by type (i.e. pseudocylindrical/cylindrical, pseudoconical/conic, and azimuthal, among others) and whether or not the projection distorts areas or shapes (i.e. equidistant, conformal, and equal-area, among others). All beginner QGIS users should know that EPSG codes are used to identify the coordinate reference system. EPSG stands for the European Petroleum Survey Group – who created the registry of coordinate reference systems codes, which are described at [epsg.io Coordinate Systems Worldwide](https://epsg.io/). 
@@ -266,6 +273,7 @@ A: Sensors receive information about an object through electromagnetic energy. T
 A: The image to the left compares the same place with two images that have different resolutions. The image on the right has a higher resolution (30 centimeter) than the image on the left (1 meter). It is easier to interpret land uses when you have a high-resolution image. Many images with free access have a resolution of 30 meters, low resolution. Note that if two images—with the same extent—where compared, the image with higher resolution would contain more data.
 
 ![alt text](./images/ResolutionExample.jpg "A comparison of raster image resolution")
+
 Source: [Bing Imagery](http://www.timassal.com/?tag=naip-imagery)
 
 ### Exercise 3. Raster Data Models.
@@ -483,37 +491,37 @@ There are many panels and toolbars on your main screen that you can view or hide
 
 Icon | Description
 --- | ---
- | Pan: Click and drag to move within the map space to find your area of interest. This can also be done with the space bar and a mouse.
- | Pan map to selection: Pans to selected features but does not zoom into the features.
- | Zoom-in: Focus on features at a larger scale, i.e., closer to 1:1 scale. A mouse wheel scrolled upwards will also zoom-in.
- | Zoom-out: Focus on features at a smaller scale, i.e., further away. A mouse wheel scrolled downwards will also zoon-out.
- | Zoom full: Zooms to the full extent of all data layers.
- | Zoom to selection (vector): When there are features selected, this tool will pan and zoom to only those selected features.
- | Zoom to layer: Zooms to highlighted layer in layer panel.
- | Zoom to native resolution (raster layer)
- | Zoom last: Returned to previous zoom extent, like a zoom undo.
- | Zoom next: Return to most recent zoom, like a zoom repeat.
- | New map view: Opens a new map screen to pan and zoom, separately from the main map space.
- | New spatial bookmark: Create a spatial bookmark for the user or the project, or a saved geographic location to return to quickly.
- | Show spatial bookmarks: The saved bookmarks will appear in your browser panel. 
- | Refresh: Map canvas and layers update, especially useful after adding a layer, panning or zooming, resizing the window, or changing visibility of a layer
+![alt text](./images/Pan.png "Pan") | Pan: Click and drag to move within the map space to find your area of interest. This can also be done with the space bar and a mouse.
+![alt text](./images/PanMapToSelection.png "Pan map to selection") | Pan map to selection: Pans to selected features but does not zoom into the features.
+![alt text](./images/ZoomIn.png "Zoom-in") | Zoom-in: Focus on features at a larger scale, i.e., closer to 1:1 scale. A mouse wheel scrolled upwards will also zoom-in.
+![alt text](./images/ZoomOut.png "Zoom-out") | Zoom-out: Focus on features at a smaller scale, i.e., further away. A mouse wheel scrolled downwards will also zoon-out.
+![alt text](./images/ZoomFull.png "Zoom full") | Zoom full: Zooms to the full extent of all data layers.
+![alt text](./images/ZoomToSelection.png "Zoom to selection") | Zoom to selection (vector): When there are features selected, this tool will pan and zoom to only those selected features.
+![alt text](./images/ZoomToLayer.png "Zoom to layer") | Zoom to layer: Zooms to highlighted layer in layer panel.
+![alt text](./images/ZoomToNativeResolution.png "Zoom to native resolution") | Zoom to native resolution (raster layer)
+![alt text](./images/ZoomLast.png "Zoom last") | Zoom last: Returned to previous zoom extent, like a zoom undo.
+![alt text](./images/ZoomNext.png "Zoom next") | Zoom next: Return to most recent zoom, like a zoom repeat.
+![alt text](./images/NewMapView.png "New map view") | New map view: Opens a new map screen to pan and zoom, separately from the main map space.
+![alt text](./images/NewSpatialBookmark.png "New spatial bookmark") | New spatial bookmark: Create a spatial bookmark for the user or the project, or a saved geographic location to return to quickly.
+![alt text](./images/ShowSpatialBookmark.png "Show spatial bookmarks") | Show spatial bookmarks: The saved bookmarks will appear in your browser panel. 
+![alt text](./images/Refresh.png "Refresh") | Refresh: Map canvas and layers update, especially useful after adding a layer, panning or zooming, resizing the window, or changing visibility of a layer
 
 It is important to understand the attributes for each of your layers. The attributes toolbar will help you familiarize yourself with the attribute information. It also includes a simple tool for calculating lines, areas, and angles: the measurement tool. Most select features tools will be covered in the section on spatial and non-spatial data queries.
 
 Icon | Description
 --- | ---
- | Identify features
- | Select features
- | Select features by expression
- | Invert feature selection
- | Deselect features from all layers
- | Open attribute table
- | Open field calculator
- | Processing toolbox
- | Show statistical summary
- | Measure line
- | Measure area
- | Measure angle
+![alt text](./images/IdentifyFeatures.png "Identify features") | Identify features
+![alt text](./images/SelectFeatures.png "Select features") | Select features
+![alt text](./images/SelectFeaturesByExpression.png "Select features by expression") | Select features by expression
+![alt text](./images/InvertSelection.png "Invert feature selection") | Invert feature selection
+![alt text](./images/DeselectFeatures.png "Deselect features from all layers") | Deselect features from all layers
+![alt text](./images/OpenAttributeTable.png "Open attribute table") | Open attribute table
+![alt text](./images/OpenFieldCalculator.png "Open field calculator") | Open field calculator
+![alt text](./images/Toolbox.png "Processing toolbox") | Processing toolbox
+![alt text](./images/ShowStatisticalSummary.png "Show statistical summary") | Show statistical summary
+![alt text](./images/MeasureLine.png "Measure line") | Measure line
+![alt text](./images/MeasureArea.png "Measure area") | Measure area
+![alt text](./images/MeasureAngle.png "Measure angle") | Measure angle
 
 The following exercise will highlight a few of the tools listed in the previous tables.
 
@@ -751,8 +759,7 @@ The input is the dataset that you wish to modify. The tool establishes the overl
 The exercises in this section will highlight clipping tools and the creation of a virtual raster layer.
 
 ### Exercise 10. Selected vector and raster tools
-*Clip*
-A clip can be just as useful as a selection based on location. In this example, we will clip the land use, land cover classes to the City of Ithaca’s boundaries to create a new dataset. Like before, you can use a non-spatial data query or the Select features tool to select the City of Ithaca. 
+*Clip*. A clip can be just as useful as a selection based on location. In this example, we will clip the land use, land cover classes to the City of Ithaca’s boundaries to create a new dataset. Like before, you can use a non-spatial data query or the Select features tool to select the City of Ithaca. 
 
 ![alt text](./images/VectorClip.png "Vector geoprocessing tools in the main vector menu")
 
@@ -767,8 +774,7 @@ The output will be the land use, land cover layer only for the city.
 
 ![alt text](./images/VectorClipOutput.png "Output from vector clipping tool")
 
-*Raster Clip by Mask*
-You may want to clip a raster dataset to your research area or area of interest. To do so, follow these steps:
+*Raster Clip by Mask*. You may want to clip a raster dataset to your research area or area of interest. To do so, follow these steps:
 
 ![alt text](./images/ClipRasterbyMaskLayer.png "Raster extraction tools in the main raster menu")
 
@@ -780,8 +786,7 @@ You may want to clip a raster dataset to your research area or area of interest.
 
 ![alt text](./images/ClipRasterbyMaskLayerOutput.png "Output from raster clipping by mask tool")
  
-*Creating a Virtual Raster Layer*
-We are going to merge the digital elevation models (DEM) into one virtual raster layer. Locate the DEMs in the raster group. You will notice that each image represents a portion of the City of Ithaca with various gray-scale shading.
+*Creating a Virtual Raster Layer*. We are going to merge the digital elevation models (DEM) into one virtual raster layer. Locate the DEMs in the raster group. You will notice that each image represents a portion of the City of Ithaca with various gray-scale shading.
 
 ![alt text](./images/BuildVirtualRaster.png "Build virtual raster in miscellaneous of the main raster drop-down menu")
 
@@ -943,7 +948,7 @@ To open the print composer, following route Menu Bar > Project > New Print Layou
 
 ![alt text](./images/PrintLayoutPageSetup.png "You can change the orientation and size of your page by right-clicking in the blank page.") 
 
-**Elements of the map**. The first step for adding elements to the composer is to  Add new map. Click the tool icon and draw the rectangle for your map space. It will appear when you finish drawing the rectangle.
+**Elements of the map**. The first step for adding elements to the composer is to Add new map. Click the tool icon and draw the rectangle for your map space. It will appear when you finish drawing the rectangle.
 
 ![alt text](./images/PrintLayoutAddNewMap.png "Add new map to the page.")
 
@@ -951,21 +956,21 @@ You will need to add and move around map elements and content. To do so use the 
 
 Icon | Description
 --- | ---
- | Pan composer to move around the composer (not the data)
- | Select move item (elements of the map); this is the tool to use for changing the extent or position of an element
- | Move item content; panning within the new map (hint: if you hit “ctrl” and scoll it zoom in/out).
-| Zoom into/out of map; this does not zoom into or out of data)
-| Refresh view allows any changes made in the QGIS main interface to appear on the Print layout
-| Add shape tool
-| Add image
-| Add a new north arrow
-| Add new label
-| Add scalebar
-| Add new legend
-| Add
-| Delete
-| Rename the layer
-| Export map as PDF, SVG, or image
+![alt text](./images/Pan.png "Pan") | Pan composer to move around the composer (not the data)
+![alt text](./images/SelectMoveItem.png "Select move item") | Select move item (elements of the map); this is the tool to use for changing the extent or position of an element
+![alt text](./images/MoveItemContent.png "Move item content") | Move item content; panning within the new map (hint: if you hit “ctrl” and scoll it zoom in/out).
+![alt text](./images/ZoomInOutMap.png "Zoom into/out of map") | Zoom into/out of map; this does not zoom into or out of data)
+![alt text](./images/Refresh.png "Refresh") | Refresh view allows any changes made in the QGIS main interface to appear on the Print layout
+![alt text](./images/AddShape.png "Add shape tool") | Add shape tool
+![alt text](./images/AddImage.png "Add image") | Add image
+![alt text](./images/AddNorthArrow.png "Add a new north arrow") | Add a new north arrow
+![alt text](./images/AddText.png "Add new label or text") | Add new label or text
+![alt text](./images/AddScalebar.png "Add scalebar") | Add scalebar
+![alt text](./images/AddNewLegend.png "Add new legend") | Add new legend
+![alt text](./images/AddItem.png "Add item") | Add item
+![alt text](./images/DeleteItem.png "Delete") | Delete item
+![alt text](./images/RenameLayer.png "Rename the layer") | Rename the layer
+![alt text](./images/ExportMap.png "Export map as PDF, SVG, or image") | Export map as PDF, SVG, or image
 
 
 The scale sometimes needs to be edited; in which case you would need to change the scale ratio. To make the scale smaller would require give it a larger denominator value. 1:30000000 would cover all North America. A larger scale would need a smaller denominator, like 1:30000 would “zoom in” to the City of Ithaca. Use “ctrl” and scroll bar on a mouse to zoom in or our slowly.
